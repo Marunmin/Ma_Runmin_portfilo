@@ -1,0 +1,645 @@
+body {
+	color: #767676;
+	-webkit-font-smoothing: antialiased;
+	width: 100%;
+	font-size:15px;
+	background:#f3f3f3;
+}
+
+.hidden
+{
+	display:none;
+}
+
+.container{
+	width:80%;
+	margin:auto;
+	overflow:hidden;
+}
+
+ul{
+	margin:0;
+	padding:0;
+}
+
+#header{
+	background:#35424a;
+	color:#ffffff;
+	border-bottom:#e8491d 3px solid;
+	width: 100%;
+	height: 10%;
+	position:fixed;
+	background-position:center;
+	-webkit-background-size: cover;
+	-o-background-size:cover;
+	-moz-background-size:cover;
+	background-size:cover;
+}
+
+header a{
+	color:#ffffff;
+	text-decoration:none;
+	text-transform: uppercase;
+	font-size:16px;
+}
+
+
+header li{
+	float:left;
+	display:inline;
+	padding:0 20px 0 20px;
+}
+
+header #brand{
+	float:left;
+
+}
+
+header #brand h1{
+	margin-top:-20px;
+}
+
+header nav{
+	float:right;
+	margin-top:10px;
+}
+
+
+
+#show{
+	min-height:500px;
+	background:url('../images/background.jpg');
+	background-position:center;
+	text-align:center;
+	color:#ffffff;
+}
+
+#show h1{
+	margin-top:200px;
+	font-size:55px;
+	margin-bottom:10px;
+	-webkit-animation-name: fadeDown;
+	-moz-animation-name: fadeDown;
+	animation-name: fadeDown;
+
+	-webkit-animation-duration: 2s;
+	animation-duration: 2s;
+
+}
+
+#show p{
+	font-size:20px;
+	-webkit-animation-name: fadeUp;
+	-moz-animation-name: fadeUp;
+	animation-name: fadeUp;
+
+	-webkit-animation-duration: 2s;
+	animation-duration: 2s;
+}
+
+#selfIntro{
+	padding:15px;
+	background:url('../images/background_middle.jpg');
+}
+
+#selfIntro h2{
+	font-size:1em;
+	color:white;
+	text-align:center;
+	font-weight:bold;
+}
+
+.myself{
+	padding:120px 0px;
+  margin:line-height;
+}
+
+#self1{
+	margin-left:50px;
+	-webkit-animation-name: fadeLeft;
+	-moz-animation-name: fadeLeft;
+	animation-name: fadeLeft;
+
+	-webkit-animation-duration: 2s;
+	animation-duration: 2s;
+}
+
+#self2{
+	margin-right:50px;
+	-webkit-animation-name: fadeRight;
+	-moz-animation-name: fadeRight;
+	animation-name: fadeRight;
+
+	-webkit-animation-duration: 2s;
+	animation-duration: 2s;
+}
+
+@keyframes fadeRight
+{
+	0%{
+		opacity:0;
+		transform:translateX(400px);
+	}
+
+	100%
+	{
+		opacity:1;
+		transform:translateX(0);
+	}
+}
+
+@-webkit-keyframes fadeRight
+{
+	0%{
+		opacity:0;
+		transform:translateX(400px);
+	}
+
+	100%
+	{
+		opacity:1;
+		transform:translateX(0);
+	}
+}
+
+@keyframes fadeLeft
+{
+	0%{
+		opacity:0;
+		transform:translateX(-200px);
+	}
+
+	100%
+	{
+		opacity:1;
+		transform:translateX(0);
+	}
+}
+
+@-webkit-keyframes fadeLeft
+{
+	0%{
+		opacity:0;
+		transform:translateX(-200px);
+	}
+
+	100%
+	{
+		opacity:1;
+		transform:translateX(0);
+	}
+}
+
+@keyframes fadeUp
+{
+	0%{
+		opacity:0;
+		transform:translateY(400px);
+	}
+
+	100%
+	{
+		opacity:1;
+		transform:translateY(0);
+	}
+}
+
+@-webkit-keyframes fadeUp
+{
+	0%{
+		opacity:0;
+		transform:translateY(400px);
+	}
+
+	100%
+	{
+		opacity:1;
+		transform:translateY(0);
+	}
+}
+
+@keyframes fadeDown
+{
+	0%{
+		opacity:0;
+		transform:translateY(-400px);
+	}
+
+	100%
+	{
+		opacity:1;
+		transform:translateY(0);
+	}
+}
+
+@-webkit-keyframes fadDown
+{
+	0%{
+		opacity:0;
+		transform:translateY(400px);
+	}
+
+	100%
+	{
+		opacity:1;
+		transform:translateY(0);
+	}
+}
+.about, .contact
+{
+	background-image:url("../images/person1.jpg");
+	position:relative;
+	background-position:center;
+	-webkit-background-size: cover;
+	-o-background-size:cover;
+	-moz-background-size:cover;
+	background-size:cover;
+	margin-bottom:50px;
+}
+
+
+.about object
+{
+	max-width: 30%;
+	margin-left: 100px;
+}
+
+#aboutCon
+{
+	margin-top:20px;
+	position:relative;
+	top:450px;
+	color:white;
+}
+
+#show1
+{
+	margin-left: 10px;
+}
+
+.imageall
+{
+	width:100%;
+}
+
+#points
+{
+	text-align: center;
+
+}
+
+#TheLordoftheRingsdots, #gal0points, #gal1points, #gal2points
+{
+	text-align:center;
+}
+
+#imageicon
+{
+	max-width: 800px;
+  position: relative;
+  margin:0 auto;
+}
+
+#TheLordoftheRingsimgCon, #gal0, #gal1, #gal2
+{
+	max-width: 800px;
+	position: relative;
+	margin: 0 auto;
+}
+
+
+
+.prev,.next{
+	cursor: pointer;
+	position:absolute;
+	top:50%;
+	padding: 10px;
+	color:white;
+	font-size:1em;
+	font-weight:bold;
+	background-color:black;
+
+}
+
+.TheLordoftheRingsprev,.TheLordoftheRingsnext, .gal0prev, .gal0next, .gal1prev, .gal1next, .gal2prev, .gal2next{
+	cursor: pointer;
+	position:absolute;
+	top:50%;
+	padding: 10px;
+	color:white;
+	font-size:1em;
+	font-weight:bold;
+	background-color:black;
+
+}
+
+
+.next, .gal0next, .gal1next, .gal2next
+{
+	right:0;
+}
+
+.TheLordoftheRingsnext
+{
+	right:0;
+}
+
+.prev, .gal0prev, .gal1prev, .gal2prev
+{
+	left:0;
+}
+
+.TheLordoftheRingsprev
+{
+	left:0;
+}
+
+.point, .TheLordoftheRingsdot, .gal0point, .gal1point, .gal2point
+{
+	cursor:pointer;
+  height: 12px;
+  width: 12px;
+  margin: 2px 2px;
+  background-color: #C0C0C0;
+  border-radius: 50%;
+  border:2px solid #9B9B9B;
+  display: inline-block;
+  transition: 0.2s ease-in-out;
+
+}
+
+
+
+.point:hover,.active, .TheLordoftheRingsactive, .TheLordoftheRingsdot:hover, .gal0active, .gal1active, .gal2active, .gal0dot:hover, .gal1dot:hover, .gal2dot:hover
+{
+	background-color:inherit;
+}
+
+#thumbSec
+{
+	margin-top:20px;
+}
+
+.proticon
+{
+	display:none;
+	text-align:center;
+
+}
+
+#proticon1 .aboutprotfilo, #proticon4 .aboutprotfilo
+{
+	-webkit-animation-name: fadeUp;
+	-moz-animation-name: fadeUp;
+	animation-name: fadeUp;
+
+	-webkit-animation-duration: 2s;
+	animation-duration: 2s;
+}
+
+#graffiti, #myVid
+{
+	-webkit-animation-name: fadeDown;
+	-moz-animation-name: fadeDown;
+	animation-name: fadeDown;
+
+	-webkit-animation-duration: 2s;
+	animation-duration: 2s;
+}
+
+#proticon0 .aboutprotfilo, #tattoo, proticon .aboutprotfilo, #galThumbSec
+{
+	-webkit-animation-name: fadeLeft;
+	-moz-animation-name: fadeLeft;
+	animation-name: fadeLeft;
+
+	-webkit-animation-duration: 2s;
+	animation-duration: 2s;
+}
+
+
+
+#imageicon, #proticon2 .aboutprotfilo, #TheLordoftheRingsimgCon, #proticon5 .aboutprotfilo
+{
+	-webkit-animation-name: fadeRight;
+	-moz-animation-name: fadeRight;
+	animation-name: fadeRight;
+
+	-webkit-animation-duration: 2s;
+	animation-duration: 2s;
+}
+
+#galThumbSec
+{
+	margin: 0 auto;
+}
+
+#thumbSec
+{
+	margin-top:40px;
+}
+
+#thumbSec h2, #thumbSec h3, #thumbSec h4
+{
+	text-align:center;
+}
+
+#thumbSec h2
+{
+	font-weight:bold;
+	font-size:1.3em;
+}
+
+#thumbSec h3
+{
+	font-size:0.9em;
+
+}
+
+#thumbSec h4
+{
+	font-size: 0.75em;
+	color:#7b7b7b;
+}
+
+.allThumbs img
+{
+	cursor:pointer;
+	transition:0.2s ease-in-out;
+}
+
+.photoGal
+{
+	display:none;
+}
+
+#photoShootGal
+{
+	margin-top:50px;
+}
+
+.allThumbs img:hover
+{
+	opacity: 0.2;
+}
+
+#work, .contact h2
+{
+	text-align: center;
+	font-weight: bold;
+	font-family: 'Bungee', sans-serif;
+	font-size: 3em;
+}
+
+.contact p
+{
+	text-align: center;
+}
+
+.contact label
+{
+	color:white;
+	font-size: 1em;
+}
+
+
+.contact
+{
+	margin-top:50px;
+}
+
+#submit
+{
+	width: 100px;
+	height: 15px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 7px;
+	padding-bottom: 25px;
+	background-color: #D016F1;
+	color: white;
+	font-size: 1em;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	float: right;
+	font-weight: bold;
+}
+
+.imgs
+{
+	margin-bottom: 20px;
+}
+
+.demoBut
+{
+	background-color:#F0B1F1;
+	color: white;
+	font-weight: bold;
+	padding: 20px;
+}
+
+.demo
+{
+	text-align:center;
+	margin-top: 20px;
+}
+
+
+
+	#mainNav li
+		{
+			display:inline;
+			border:none;
+			background:none;
+			margin-right:20px;
+		}
+
+		#mainNav li:first-child
+		{
+			border-top:none;
+		}
+
+		#mainNav li:hover
+		{
+			background:none;
+		}
+
+		#mainNav
+		{
+			margin-top: 10px;
+			float:left;
+			margin-left:20px;
+
+		}
+
+		#mainNav a
+		{
+			font-size:1em;
+		}
+
+		#mainNav li a:hover
+		{
+			color:grey;
+		}
+		#mainNav
+		{
+			list-style-type:none;
+			text-align: center;
+
+		}
+
+		.title-bar
+{
+	background: none;
+}
+@media screen and (min-width: 37.5em){
+	#contactInfo object
+	{
+		max-width: 5%;
+	}
+
+	.about object
+{
+	max-width: 30%;
+	margin-left: 200px;
+
+	@media screen and (min-width:90em){
+	.about object
+{
+	max-width: 30%;
+	margin-left: 170px;
+
+}
+}
+
+@media screen and (min-width:90em){
+	.about object
+{
+	max-width: 30%;
+	margin-left: 200px;
+
+}
+
+
+}
+
+@media screen and (min-width: 48em){
+	#selfIntro h2
+	{
+		font-size: 1em;
+	}
+
+	.about object
+{
+	max-width: 30%;
+	margin-left: 250px;
+
+}
+}
+@media screen and (min-width: 64em){
+	.about object
+{
+	max-width: 30%;
+	margin-left: 150px;
+
+}
